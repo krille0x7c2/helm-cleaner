@@ -19,17 +19,22 @@
 
 $ cargo install --git https://github.com/krille0x7c2/helm-cleaner.git
 
+---
 
-### 2. Optional: Generate shell completions
+## Optional: Generate shell completions
 
 `helm-cleaner` can generate shell completions for Bash, Zsh, and Fish. This allows tab completion for commands and flags.
 
-#### Bash
+---
+
+### Bash
 
 ```bash
 helm-cleaner completions > helm-cleaner.bash
 source helm-cleaner.bash
 sudo cp helm-cleaner.bash /etc/bash_completion.d/helm-cleaner
+
+---
 
 #### Zsh
 
@@ -37,6 +42,8 @@ sudo cp helm-cleaner.bash /etc/bash_completion.d/helm-cleaner
 helm-cleaner completions > _helm-cleaner
 mkdir -p ~/.zsh/completions
 mv _helm-cleaner ~/.zsh/completions/
+
+---
 
 #### Fish
 
@@ -47,6 +54,7 @@ helm-cleaner completions > helm-cleaner.fish
 mkdir -p ~/.config/fish/completions
 mv helm-cleaner.fish ~/.config/fish/completions/
 
+---
 
 ## Usage
 
