@@ -27,13 +27,13 @@ $ cargo install --git https://github.com/krille0x7c2/helm-cleaner.git
 
 ---
 
-### Bash
+#### Bash
 
 ```bash
 helm-cleaner completions > helm-cleaner.bash
 source helm-cleaner.bash
 sudo cp helm-cleaner.bash /etc/bash_completion.d/helm-cleaner
-
+```
 ---
 
 #### Zsh
@@ -42,7 +42,7 @@ sudo cp helm-cleaner.bash /etc/bash_completion.d/helm-cleaner
 helm-cleaner completions > _helm-cleaner
 mkdir -p ~/.zsh/completions
 mv _helm-cleaner ~/.zsh/completions/
-
+```
 ---
 
 #### Fish
@@ -53,7 +53,7 @@ Generate completions for Fish:
 helm-cleaner completions > helm-cleaner.fish
 mkdir -p ~/.config/fish/completions
 mv helm-cleaner.fish ~/.config/fish/completions/
-
+```
 ---
 
 ## Usage
@@ -62,12 +62,12 @@ Run `helm-cleaner` to uninstall a Helm release in a specific namespace:
 
 ```bash
 helm-cleaner uninstall --namespace my-namespace
-
-### Uninstall all releases and delete namespace without prompt
+```
+## Uninstall all releases and delete namespace without prompt
 
 ```bash
 helm-cleaner uninstall --namespace my-namespace --delete-namespace --force
-
+```
 ## Flags / Options
 
 | Flag | Description |
