@@ -1,0 +1,15 @@
+[package]
+name = "helm-cleaner"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+clap_complete = "4"
+anyhow = "1"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+dialoguer = "0.11"
+
+# Pick the k8s version feature matching your cluster
+kube = { version = "1.1.0", features = ["runtime", "derive"] }
+k8s-openapi = { version = "0.25", features = ["v1_30"] }
